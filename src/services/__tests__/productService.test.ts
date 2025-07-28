@@ -28,7 +28,7 @@ describe('productService', () => {
       const result = await productService.getProducts();
 
       expect(mockedAxios.get).toHaveBeenCalledWith(
-        expect.stringContaining('equalexperts.github.io')
+        expect.stringContaining('fakestoreapi.com')
       );
       expect(result).toEqual(mockProducts);
     });
